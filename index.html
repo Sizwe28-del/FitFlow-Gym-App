@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFlow Gym App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to FitFlow Gym App</h1>
+    <nav>
+      <ul>
+        <li><a href="#workouts">Workouts</a></li>
+        <li><a href="#exercises">Exercises</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#plate-calculator">Plate Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="workouts">
+      <h2>Workouts</h2>
+      <div class="workout-card">
+        <h3>Full Body Workout</h3>
+        <p>Complete workout for all body muscles.</p>
+        <button onclick="playVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Watch Video</button>
+      </div>
+      <!-- Add more workout cards here -->
+    </section>
+
+    <section id="exercises">
+      <h2>Exercises</h2>
+      <div class="exercise-card">
+        <h3>Push Up</h3>
+        <p>Great for upper body strength.</p>
+        <button onclick="playVideo('https://www.youtube.com/watch?v=IODxDxX7oi4')">Watch Video</button>
+      </div>
+      <!-- Add more exercise cards here -->
+    </section>
+
+    <section id="nutrition">
+      <h2>Nutrition</h2>
+      <div class="nutrition-card">
+        <h3>Protein Shake</h3>
+        <p>Great for muscle recovery.</p>
+      </div>
+      <!-- Add more nutrition cards here -->
+    </section>
+
+    <section id="plate-calculator">
+      <h2>Plate Calculator</h2>
+      <div>
+        <label for="weight">Weight (kg): </label>
+        <input type="number" id="weight" onchange="calculatePlates()">
+        <div id="plates"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FitFlow Gym</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
